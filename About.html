@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>About Me</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/about.css" />
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	
+
+
+
+	</head>
+
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<a href="#menu"></a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About Me</a></li>
+					<li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+					
+				</ul>
+			</nav>
+
+			<div class="sectiontitle">
+			    <h2>About Me</h2>
+			    <span class="headerLine"></span>
+			</div>
+			<div id="projectFacts" class="sectionClass">
+			    <div class="fullWidth eight columns">
+			        <div class="projectFactsWrap ">
+			            <div class="item wow fadeInUpBig animated animated" data-number="39" style="visibility: visible;">
+			                <i class="fa fa-book"></i>
+			                <p id="number1" class="number">39</p>
+			                <span></span>
+			                <p>Books Read</p>
+			            </div>
+			            <div class="item wow fadeInUpBig animated animated" data-number="134" style="visibility: visible;">
+			                <i class="fa fa-gamepad"></i>
+			                <p id="number2" class="number">134</p>
+			                <span></span>
+			                <p>Video Games Played</p>
+			            </div>
+			            <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+			                <i class="fa fa-bicycle"></i>
+			                <p id="number3" class="number">455</p>
+			                <span></span>
+			                <p>Bike Rides Taken</p>
+			            </div>
+			            <div class="item wow fadeInUpBig animated animated" data-number="2876" style="visibility: visible;">
+			                <i class="fa fa-spotify"></i>
+			                <p id="number4" class="number">2876</p>
+			                <span></span>
+			                <p>Songs Listened To</p>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+
+			<script>
+
+				$.fn.jQuerySimpleCounter = function( options ) {
+				    var settings = $.extend({
+				        start:  0,
+				        end:    100,
+				        easing: 'swing',
+				        duration: 400,
+				        complete: ''
+				    }, options );
+
+				    var thisElement = $(this);
+
+				    $({count: settings.start}).animate({count: settings.end}, {
+						duration: settings.duration,
+						easing: settings.easing,
+						step: function() {
+							var mathCount = Math.ceil(this.count);
+							thisElement.text(mathCount);
+						},
+						complete: settings.complete
+					});
+				};
+
+			$('#number1').jQuerySimpleCounter({end: 342,duration: 2000});
+			$('#number2').jQuerySimpleCounter({end: 231,duration: 2500});
+			$('#number3').jQuerySimpleCounter({end: 455,duration: 3000});
+			$('#number4').jQuerySimpleCounter({end: 24789,duration: 3500});
+
+  
+
+		</script>
+
+			<!-- Section -->
+					<section class="wrapper style1">
+						<div class="inner">
+							<!-- 2 Columns -->
+								<div class="flex flex-2">
+									<div class="col col1">
+										<div class="image round fit">
+											<a href="generic.html" class="link"><img src="images/Me.jpg" alt="" /></a>
+										</div>
+									</div>
+									<div class="col col2">
+										<h3>Who Am I? </h3>
+										<p>I am a geek at heart. I enjoy "nerding" out over feats of architecture, mid-century modern furniture, cars, and mechanical keyboards. I like to watch Formula 1, work on my latest woodworking project, and take nice long drives in my Miata. I am always up for a trip to the nearest coffee shop to talk about board games or French culture. 
+										<br />
+										<p>In August of 2017 I married my highschool sweetheart Faith Ripa. After two weeks in Nashville, Sparta, and Piegion Forge we came back home to Harrisonburg Virginia so that I could finish out my senior year at James Madison University. After about a month of marriage we decided that something was missing and we needed a pet cat. We found our son at a local organization called cats craddle and the rest was history. Our family of three is always looking for our next adventure and always looking to take naps on the weekend.</p>
+                    				</div>
+<!--										
+								</div>
+						</div>
+						
+					</section>
+
+					<!-- Section -->
+					<section class="wrapper style1">
+						<div class="inner">
+							<header class="align-center">
+								<h2>What I'm Intersted In</h2>
+							</header>
+							<div class="flex flex-3">
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/computer.png" alt="" />
+									</div>
+                                    <h4>Tech that will take over the world</h4>
+                                    
+									<p>I love the show Black Mirror on Netflix. It makes me think, "hmmm...neat". I enjoy all types of technology and hope to one day start my own tech youtube channel.</p>
+								</div>
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/momo.png" alt="" />
+									</div>
+									<h4>MoMo</h4>
+                                    
+									<p>MoMo is my beatiful 50% siamese 50% tuxedo cat. He loves sitting on top of my shoulder while I code much like MoMo from Avatar The Last Airbender.</p>
+								</div>
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/Keyboard.png" alt="" />
+									</div>
+									<h4>Click-Clack</h4>
+                                    
+									<p>Mechanical Keyboards are amazing and I highly recomend using one atleast once. These keyboards make typing even more satisfying.</p>
+								</div>
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/Headphone.png" alt="" />
+									</div>
+									<h4>Audiophile Stuff</h4>
+                                    
+									<p>High quality headphones make listening to music such a more enjoyable exprience. I currently listen on my Sennhieser 598c's regulary and love the tight bass and extrodinary clarity that the headphones offer.</p>
+								</div>
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/Coffee.png" alt="" />
+									</div>
+									<h4>Warm Drinks</h4>
+                                    
+									<p>Never underestimate the power of a warm drink in the morning. One of my favorite parts of the day is measeruing our Red Rooster coffee grinding it up and putting it into the machine to be enjoyed after I get out of the shower.</p>
+								</div>
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/Engine.png" alt="" />
+									</div>
+									<h4>Zoom Zoom</h4>
+                                    
+									<p>Miata is always the answer. Mine is green. What are you waiting for? </p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+
+		
+        
+        <!--        scripts-->
+        
+        	<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		
+        
+    </body>
+</html>
